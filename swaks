@@ -1,0 +1,1 @@
+swaks --to keith.zhang@stonybrook.edu --from noreply@cse356.compas.cs.stonybrook.edu --server localhost --port 587 --auth-user user --auth-password password
