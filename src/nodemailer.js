@@ -10,7 +10,7 @@ export default async (email, id, key) => {
       pass: "password",
     },
   });
-  await transporter.sendMail({
+  return await transporter.sendMail({
     from: "noreply@cse356.compas.cs.stonybrook.edu",
     to: email,
     subject: "Verify Email",
