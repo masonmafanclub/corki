@@ -1,8 +1,21 @@
 {
-  "name": "haraka_local",
-  "description": "An SMTP Server",
-  "version": "0.0.1",
-  "dependencies": {},
-  "repository": "",
-  "license": "MIT"
+  "name": "corki",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "nodemon --exec babel-node ./src/index.js",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && babel ./src --out-dir dist --copy-files",
+    "prod": "node ./dist/index.js"
+  },
+  "dependencies": {
+    "express": "~4.16.1",
+    "nodemailer": "^6.7.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
+  }
 }
